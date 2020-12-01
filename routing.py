@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 @app.route('/<path:dummy>')
 def fallback(dummy):
-    return 'This one catches everything else'
+    return 'This one catches everything else, Sorry! No response. Try again.'
 
 @app.route("/")
 @app.route("/index")
